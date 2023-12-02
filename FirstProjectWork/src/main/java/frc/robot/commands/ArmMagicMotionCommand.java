@@ -16,7 +16,6 @@ public class ArmMagicMotionCommand extends CommandBase {
   private Double setPoint;
   
   public ArmMagicMotionCommand(Double setPoint) {
-    timer.stop();
     this.setPoint = setPoint;
     this.timer = new Timer();
     this.addRequirements(arm);
