@@ -47,9 +47,10 @@ public class Arm extends SubsystemBase {
       if (status.isOK()){
         break;
       }
-      if (!status.isOK()){
-        System.out.println("couldnt get motor configurators!");
-      }
+      
+    }
+    if (!status.isOK()){
+      System.out.println("couldnt get motor configurators!");
     }
   }
 
